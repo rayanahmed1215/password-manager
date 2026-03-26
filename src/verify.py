@@ -35,6 +35,6 @@ class Validation():
             errors.append("Password must contain a lowercase letter")
 
         if password in self.common_passwords:
-            errors.append()
+            errors.append("Password is too common")
 
         return errors
